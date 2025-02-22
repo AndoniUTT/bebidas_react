@@ -36,14 +36,14 @@ export default function Header() {
 
   return (
     <header className={ isHome ? 'bg-header bg-center bg-cover h-96 relative' : 'bg-slate-800'}>
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div> {/* Capa de opacidad */}
+      <div className="absolute inset-0 bg-black bg-opacity-50"></div> 
       <div className="relative mx-auto container px-5 py-16">
         <div className="flex justify-between items-center">
           <div>
             <img className="w-32" src="/logo.svg" alt="logotipo" />
           </div>
 
-          {/* Menú de navegación */}
+          
           <nav className="flex gap-6">
             <NavLink 
               className={({isActive}) => 
@@ -62,7 +62,6 @@ export default function Header() {
           </nav>
         </div>
 
-        {/* Formulario de búsqueda */}
         {isHome && (
           <form 
             onSubmit={handleSubmit}
